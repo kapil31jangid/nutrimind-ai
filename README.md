@@ -67,7 +67,7 @@ nutrimind-ai/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/kapil/nutrimind-ai.git
+git clone https://github.com/kapil31jangid/nutrimind-ai.git
 cd nutrimind-ai
 
 # 2. Run (no install step needed)
