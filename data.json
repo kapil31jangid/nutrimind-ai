@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Boiled Eggs (2 pcs)",
+    "calories": 155,
+    "protein": 13.0,
+    "fat": 11.0,
+    "price": 20
+  },
+  {
+    "name": "Banana",
+    "calories": 89,
+    "protein": 1.1,
+    "fat": 0.3,
+    "price": 10
+  },
+  {
+    "name": "Chicken Breast (100g)",
+    "calories": 165,
+    "protein": 31.0,
+    "fat": 3.6,
+    "price": 60
+  },
+  {
+    "name": "Paneer Tikka (1 piece)",
+    "calories": 220,
+    "protein": 14.0,
+    "fat": 15.0,
+    "price": 45
+  },
+  {
+    "name": "Instant Noodles",
+    "calories": 380,
+    "protein": 8.0,
+    "fat": 14.0,
+    "price": 15
+  },
+  {
+    "name": "Greek Yogurt (150g)",
+    "calories": 100,
+    "protein": 10.0,
+    "fat": 0.7,
+    "price": 35
+  }
+]

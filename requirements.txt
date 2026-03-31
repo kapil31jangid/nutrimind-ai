@@ -1,0 +1,4 @@
+# NutriMind AI — Dependencies
+# No external packages required.
+# Uses Python standard library only (json, sys).
+# Python >= 3.10 recommended (for `dict | None` type hints).
