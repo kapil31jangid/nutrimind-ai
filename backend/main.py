@@ -1,14 +1,9 @@
-"""
-main.py — NutriMind AI entry point
-Smart food decision assistant: recommends, explains, and suggests swaps.
-"""
-
 import json
+import os
 import sys
 from utils import health_score, explain, suggest_swap
 
-
-DATA_FILE = "data.json"
+DATA_FILE = os.path.join(os.path.dirname(__file__), "data.json")
 
 
 def load_foods(filepath: str) -> list:

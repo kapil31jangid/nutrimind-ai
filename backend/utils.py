@@ -1,9 +1,3 @@
-"""
-utils.py — NutriMind AI core logic
-Pure functions: no I/O, no side effects.
-"""
-
-
 def health_score(food: dict) -> float:
     """
     Calculate the health score of a food item.
