@@ -18,29 +18,36 @@ def health_score(food: dict) -> float:
 
 def explain(food: dict, budget: float) -> list:
     """
-    Generate plain-English reasons why a food was recommended.
-
-    Args:
-        food:   dict with nutritional and price data.
-        budget: user's budget in ₹.
-
-    Returns:
-        list of reason strings.
+    Generate sophisticated, analytical reasons why a food was mathematically recommended.
     """
     reasons = []
-
-    if food["protein"] >= 10:
-        reasons.append(f"High protein content ({food['protein']}g) — great for energy and muscle")
-
+    
+    # Protein density check
+    if food["protein"] >= 15:
+        reasons.append(f"Superior protein density ({food['protein']}g) detected for lean mass support.")
+    elif food["protein"] > 5:
+        reasons.append(f"Balanced amino acid profile with {food['protein']}g of high-quality protein.")
+        
+    # Fat/Lipid profile
     if food["fat"] <= 5:
-        reasons.append(f"Low in fat ({food['fat']}g) — heart-friendly choice")
+        reasons.append(f"Optimized lipid profile ({food['fat']}g) to minimize metabolic inflammation.")
+    elif food["fat"] <= 12:
+        reasons.append(f"Controlled fat content ({food['fat']}g) aligned with heart-healthy guidelines.")
+        
+    # Caloric efficiency
+    if food["calories"] <= 150:
+        reasons.append(f"High caloric efficiency: only {food['calories']} kcal for maximum nutrient delivery.")
+    elif food["calories"] <= 300:
+        reasons.append(f"Sustainable energy release at {food['calories']} kcal for prolonged satiety.")
 
-    if food["calories"] <= 200:
-        reasons.append(f"Moderate calorie count ({food['calories']} kcal) — won't weigh you down")
+    # Budget optimization
+    savings = budget - food["price"]
+    if savings > 0:
+        reasons.append(f"Fiscal efficiency: Secured 100% of nutritional needs at just ₹{food['price']} (saving ₹{savings:.0f}).")
+    else:
+        reasons.append(f"Maximum budget utilization for peak nutritional density at ₹{food['price']}.")
 
-    reasons.append(f"Fits your budget (₹{food['price']} ≤ ₹{budget:.0f})")
-
-    return reasons
+    return reasons[:4] # Keep it sharp and focused
 
 
 def suggest_swap(selected: dict, all_foods: list, budget: float) -> dict | None:

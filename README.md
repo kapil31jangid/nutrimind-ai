@@ -65,6 +65,15 @@ gcloud run deploy nutrimind-ai \
 
 ---
 
+## 🌟 Updates in the Deployed Version
+
+- **Full-Stack Conversion**: Transitioned from a local CLI script to a globally accessible web application using **Next.js 16** and **FastAPI**.
+- **Modern UI/UX**: Implemented a responsive, visually striking dark-themed interface utilizing **Tailwind CSS** and **shadcn/ui**.
+- **Docker Optimization**: Developed a multi-stage `Dockerfile` that statically builds the React frontend and serves it through the FastAPI backend, allowing for zero-configuration, single-container deployment on Cloud Run.
+- **RESTful Architecture**: Migrated core decision-making logic (`health_score`, `explain`, `swap`) into a robust JSON API (`/api/recommend`).
+
+---
+
 ## 🧮 How It Works
 
 1. **You enter a budget** (e.g., ₹200).
